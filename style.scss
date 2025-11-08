@@ -49,20 +49,20 @@ body{
             text-align: center;
             font-weight: $bold-font;
             border-radius: 0.5rem;
-            margin-left: 1.5rem;           
+            margin-inline-start: 1.5rem;           
         }
 
         .date{
-            margin-left: 1.5rem;
-            margin-top:1rem;
-            margin-bottom: 1rem;
+            margin-inline-start: 1.5rem;
+            margin-block-start:1rem;
+            margin-block-end:  1rem;
             
         }
 
         h1{
            
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
+            margin-inline-start: 1.5rem;
+            margin-block-end: 1rem;
 
             span{
                 font-weight: $bold-font; 
@@ -74,7 +74,7 @@ body{
             }
            
         }
-        section{
+        article{
             color: $secondary-color;
             margin:0 1.5rem;
             text-align: justify;
@@ -91,8 +91,8 @@ body{
         }
         figcaption{
             position: relative;
-            margin-left: 1rem;
-            left: 4rem;
+            margin-inline-start: 1rem;
+            left: 3rem;
             bottom: 2rem;
             font-weight: $bold-font;
             font-size: 0.85rem;

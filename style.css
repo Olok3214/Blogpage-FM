@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background-color: hsl(47, 88%, 63%); 
+  --secondary-color:hsl(0, 0%, 42%);
+  --primary-color: hsl(0, 0%, 7%);
+  --body-color:hsl(0, 0%, 100%);
+  --bold-font:800;
+}
 * {
   padding: 0;
   margin: 0;
@@ -11,19 +19,19 @@ html, body {
 }
 
 body {
-  background-color: hsl(47, 88%, 63%);
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: hsl(0, 0%, 7%);
+  color: var(--primary-color);
 }
 body main {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--body-color);
   width: 23rem;
   height: 32rem;
   border-radius: 1rem;
-  border: 0.0625rem solid hsl(0, 0%, 7%);
-  box-shadow: 0.5rem 0.5rem 0px hsl(0, 0%, 7%);
+  border: 0.0625rem solid var(--primary-color);
+  box-shadow: 0.5rem 0.5rem 0px var(--primary-color);
   display: flex;
   flex-direction: column;
 }
@@ -35,33 +43,33 @@ body main .image img {
   width: 20rem;
 }
 body main .tag {
-  background-color: hsl(47, 88%, 63%);
+  background-color: var(--background-color);
   width: 4.5rem;
   padding: 0.3rem;
   text-align: center;
-  font-weight: 800;
+  font-weight: var(--bold-font);
   border-radius: 0.5rem;
-  margin-left: 1.5rem;
+  margin-inline-start: 1.5rem;
 }
 body main .date {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-inline-start: 1.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
 }
 body main h1 {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin-inline-start: 1.5rem;
+  margin-block-end: 1rem;
 }
 body main h1 span {
-  font-weight: 800;
+  font-weight: var(--bold-font);
   font-size: 1.6rem;
 }
 body main h1 span:hover {
   cursor: pointer;
-  color: hsl(47, 88%, 63%);
+  color: var(--background-color);
 }
-body main section {
-  color: hsl(0, 0%, 42%);
+body main article {
+  color: var(--secondary-color);
   margin: 0 1.5rem;
   text-align: justify;
 }
@@ -75,14 +83,14 @@ body main figure img {
 }
 body main figcaption {
   position: relative;
-  margin-left: 1rem;
-  left: 4rem;
+  margin-inline-start: 1rem;
+  left: 3rem;
   bottom: 2rem;
   font-weight: 800;
   font-size: 0.85rem;
   width: 5rem;
 }
 body main figcaption:hover {
-  color: hsl(47, 88%, 63%);
+  color: var(--background-color);
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
